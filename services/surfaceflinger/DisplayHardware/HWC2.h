@@ -272,6 +272,7 @@ public:
     hal::Error getPhysicalDisplayOrientation(Hwc2::AidlTransform* outTransform) const override;
 
 private:
+    void loadDisplayCapabilities();
 
     // This may fail (and return a null pointer) if no layer with this ID exists
     // on this display
